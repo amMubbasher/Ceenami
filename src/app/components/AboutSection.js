@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
-import frontImg2 from '../assets/front-img-2.jpg' // optional image, change as you wish
+import frontImg2 from '../assets/front-img-2.jpg'
 
 export default function AboutSection() {
     const ref = useRef(null)
@@ -40,17 +40,17 @@ export default function AboutSection() {
                 {/* Text Card */}
                 <div
                     ref={ref}
-                    className={`w-full max-w-3xl transition-all duration-1000 ease-in-out rounded-xl p-8 bg-black/40 backdrop-blur-md border border-white border-opacity-10 shadow-lg ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                    className={`w-full max-w-3xl transition-all duration-1000 ease-in-out rounded-xl p-8 bg-black/40 backdrop-blur-md shadow-lg ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                         }`}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500 text-center lg:text-left">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500 text-center lg:text-left" style={{ fontFamily: 'Arkhip' }}>
                         About Ceenami
                     </h2>
                     <p className="text-lg md:text-xl text-blue-100 leading-relaxed">
-                        Described as a thoughtful artist with no boundaries, Ceenami isn’t boxed in by genre labels. His sound blends catchy pop energy with hip-hop rhythm and real, heartfelt lyrics that shift with each release.
+                        Described as a thoughtful artist with no boundaries, <span style={{ fontFamily: 'Arkhip' }}> Ceenami </span> isn’t boxed in by genre labels. His sound blends catchy pop energy with hip-hop rhythm and real, heartfelt lyrics that shift with each release.
                     </p>
                     <p className="text-lg md:text-xl text-blue-100 mt-4 leading-relaxed">
-                        From Orlando, Florida to fans in Brazil, Germany, Mexico, and the US, Ceenami’s music jumps from bangers to pop hits to deep reflections without skipping a beat. His talent and drive keep pushing him forward in a way that stands out across the music world.
+                        From Orlando, Florida to fans in Brazil, Germany, Mexico, and the US, <span style={{ fontFamily: 'Arkhip' }}> Ceenami’s </span> music jumps from bangers to pop hits to deep reflections without skipping a beat. His talent and drive keep pushing him forward in a way that stands out across the music world.
                     </p>
                 </div>
             </div>
